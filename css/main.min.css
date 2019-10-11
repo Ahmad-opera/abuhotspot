@@ -1,0 +1,235 @@
+* {
+  outline: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-rendering: auto;
+}
+
+@font-face {
+  font-family: AdventPro;
+  src: url("../fonts/AdventPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: AdventProBold;
+  src: url("../fonts/AdventPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Adventprosemibold;
+  src: url("../fonts/AdventPro-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: AdventproThin;
+  src: url("../fonts/AdventPro-Thin.ttf") format("truetype");
+}
+
+body {
+  background: green;
+}
+
+.banner {
+  margin: auto;
+}
+
+.container:hover {
+  -webkit-box-shadow: rgba(157, 255, 101, 0.561) 0px 0px 40px;
+          box-shadow: rgba(157, 255, 101, 0.561) 0px 0px 40px;
+  -webkit-transition: 0.8s cubic-bezier(0.64, 0.09, 0, 1, 1.01);
+  transition: 0.8s cubic-bezier(0.64, 0.09, 0, 1, 1.01);
+}
+
+.container {
+  font-family: adventpro;
+  font-size: 1em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  display: block;
+  margin: auto;
+  margin-top: 2.60417%;
+  text-align: center;
+  background: darkgreen;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  width: 100%;
+  -webkit-transition: 0.8s cubic-bezier(0.88, -0.55, 0.265, 0.1);
+  transition: 0.8s cubic-bezier(0.88, -0.55, 0.265, 0.1);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 320px;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    text-rendering: optimizeSpeed;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 320px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    padding-top: 19%;
+    padding-bottom: 100%;
+    height: 100%;
+  }
+}
+
+.container h5 > a {
+  color: #ff9318;
+}
+
+.container h5 > a:hover {
+  color: lightgreen;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  font-family: adventpro;
+  margin-bottom: 15px;
+  max-width: 80%;
+  margin: auto;
+  font-size: 1em;
+}
+
+.container button {
+  font-family: adventpro;
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: lightgreen;
+  background: darkgreen;
+  padding: 8px 13px;
+  text-transform: uppercase;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+
+.container button:hover {
+  -webkit-box-shadow: #9dff658f 0px 0px 15px;
+          box-shadow: #9dff658f 0px 0px 15px;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.container button:focus {
+  -webkit-box-shadow: #9dff658f 0px 0px 15px;
+          box-shadow: #9dff658f 0px 0px 15px;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.container input {
+  font-family: adventprosemibold;
+  font-size: .95em;
+  margin-top: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 30px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 30px;
+  background: transparent;
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  padding: 10px 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: lightgreen;
+}
+
+.container input[type="username"] {
+  text-transform: lowercase;
+}
+
+.container input:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: #9dff658f 0px 0px 20px;
+          box-shadow: #9dff658f 0px 0px 20px;
+}
+
+.container input:focus {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 1.20em;
+  width: 45%;
+  -webkit-box-shadow: #9dff658f 0px 0px 20px;
+          box-shadow: #9dff658f 0px 0px 20px;
+}
+
+.container input::-webkit-input-placeholder {
+  color: lightgreen;
+}
+
+.container input:-ms-input-placeholder {
+  color: lightgreen;
+}
+
+.container input::-ms-input-placeholder {
+  color: lightgreen;
+}
+
+.container input::placeholder {
+  color: lightgreen;
+}
+
+.foot {
+  background: green;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.foot h1, .foot h2, .foot h3, .foot h4, .foot h5, .foot h6 {
+  font-family: adventprobold;
+}
+
+@media screen and (min-width: 1024px) {
+  .foot {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .foot {
+    padding: 15px;
+    max-width: 200px;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+.foot a {
+  color: #ff9318;
+  font-family: adventprobold;
+}
+
+.footer {
+  -webkit-transition: 0.8s cubic-bezier(0.88, -0.55, 0.265, 1.55);
+  transition: 0.8s cubic-bezier(0.88, -0.55, 0.265, 1.55);
+  margin-top: 10px;
+  font-size: .8em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: adventprosemibold;
+}
