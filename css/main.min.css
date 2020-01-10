@@ -62,8 +62,6 @@ body {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 320px;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
     text-rendering: optimizeSpeed;
   }
 }
